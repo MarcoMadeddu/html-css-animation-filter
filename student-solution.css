@@ -1,1 +1,161 @@
 /* YOUR SOLUTIONS HERE */
+/* Esercizio1*/
+.ex-1-square {
+    transition: background 2s;
+}
+.ex-1-square:hover {
+    background: red;
+}
+
+/* esercizio 2 */
+.ex-2-square{
+  transition: width 1s;
+}
+
+.ex-2-square:active{
+  width: 100%;
+}
+
+/* esercizio 3 */
+.ex-3-square{
+  transition: border-radius 2s;
+}
+
+.ex-3-square:hover{
+  border-radius: 50%;
+}
+
+/* esercizio 4 */
+.ex-4-square{
+  transition: opacity 1s;
+}
+
+.ex-4-square:hover{
+  opacity: 0;
+}
+
+/* esercizio 5 */
+.ex-5-square{
+  transition: transform 2s;
+}
+
+.ex-5-square:hover{
+  transform: scale(2);
+}
+
+.ex-5-square:active{
+  transform: scale(0.5);
+}
+
+/* esercizio 6 */
+
+.ex-6-img:hover{
+  filter: grayscale(1);
+}
+
+/* eserczio 7 */
+
+.ex-7-img{
+  transition: filter 2s;
+}
+
+.ex-7-img:hover{
+  filter: blur(2px) invert();
+}
+
+/* esercizio 8 */
+
+.ex-8-img{
+  transition: filter 2s,
+              border-radius 2s;
+}
+
+.ex-8-img:hover{
+  filter: blur(2px) grayscale(0.5);
+  border-radius: 15px;
+}
+
+/* esercizio 9 */
+.ex-9-img{
+  transition: filter 2s,
+              border-radius 2s,
+              transform 2s;
+}
+
+.ex-9-img:hover{
+  filter: sepia(0.5) opacity(0.5);
+  border-radius: 15px;
+  transform: scale(0.5);
+}
+
+/* esercizio 10 */
+
+.ex-10-icon{
+animation: spin 1s linear 1;
+}
+
+@keyframes spin{
+  from{
+    transform: rotate(0);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+/* esercizi0 11 */
+
+.ex-11-icon:hover{
+animation: spin 1s linear ;
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0);
+  }
+
+  75%{
+    transform: rotate(300deg);
+  }
+
+  100%{
+    transform: rotate(0);
+  }
+}
+
+/* esercizi0 12 */
+
+.ex-12-top-white{
+animation: moveTopWhite 1s infinite;
+}
+
+@keyframes moveTopWhite{
+  0%{
+    left: 0%;
+  }
+  50%{
+    left: 60%;
+  }
+
+  100% {
+      left: 0%;
+  }
+}
+
+.ex-12-bottom-white{
+animation: moveBottomWhite 1s infinite;
+}
+
+@keyframes moveBottomWhite{
+  0%{
+    right: 0%;
+  }
+  50%{
+    right: 60%;
+  }
+
+  100% {
+    right: 0%;
+  }
+}
